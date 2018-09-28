@@ -1,0 +1,20 @@
+title: Aussies against the Loan Charge
+email: "AussiesResistingHMRC@gmail.com"
+description: >-
+  A support network for Australian affected by the UK 2019 HMRC Loan Charge
+#baseurl: "" # the subpath of your site, e.g. /blog
+#url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - update_boostrap.sh
