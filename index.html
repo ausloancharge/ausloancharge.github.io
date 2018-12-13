@@ -7,6 +7,8 @@ order: 00
 <div class="jumbotron">
   <div class="container">
     <h1 class="display-4">Aussies against the Loan Charge</h1>
+    <p><b>Retrospective law is evil -- all Australians deserve certainty in their affairs.</b></p>
+    <p><b>Foreign claims should only be raised for non contested tax charges - not tax in dispute (this includes APNs and the 2019 Loan charge)</b></p>
     <p>We are a support group for Australians who are now caught up in the UK 2019 Loan Charge, working very closely with the <a href="https://www.hmrcloancharge.info/">Loan Charge Action Group</a>.</p>
     <p>If you worked in the UK in the last 20 years as a contractor and have received a <i>brown</i> envelope from HMRC, or a notice from the ATO, you should get in touch with us.</p>
     <p><a class="btn btn-primary btn-lg" href="about-us" role="button">Learn more &raquo;</a></p>
@@ -17,24 +19,24 @@ order: 00
 <div class="container">
   <div class="row">
     <div class="col-md-6">
-    <h3>Scheme promoters</h3>
-      <p>If you have ever engaged the services of these companies, you may be affected.</p>
-      <ul>
-        <li>White Collar Consulting</li>
-        <li>Cascade / Penfolds / Hamilton / Grange</li>
-        <li>Assignment Solutions</li>
-        <li>Edge Consulting / Norla</li>
-        <li>Talent Resource Management</li>
-        <li>Cherrylon Marketing</li>
-        <li>Trentburg Holdings / Raingold</li>
-        <li>Tract Management</li>
-        <li>Sanzar Partnership / Sanzar Solutions</li>
-        <li>Castlemaine</li>
-        <li>Actinium Management</li>
-        <li>Aston Management</li>
-        <li>Newquay Professional</li>
-        <li>ASMG</li>
-      </ul>
+    <h3>Latest News</h3>
+  {% for post in site.posts %}
+  <p>
+    <div class="row no-gutters">
+      {{ post.title }}
+      <span class="small">{{ post.description }}</span>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-auto mr-auto">
+        <span class="small text-muted">{{ post.date | date_to_long_string }}</span>
+      </div>
+      <div class="col-auto">
+        <span class="small"><a href="{{ post.url }}">Read More</a></span>
+      </div>
+    </div>
+  </p>
+  {% endfor %}
+
     </div>
 
     <div class="col-md-6">
@@ -61,4 +63,36 @@ order: 00
       <p><a class="btn btn-secondary" href="about-us" role="button">View details &raquo;</a></p>
     </div>
   </div>
+  <hr />
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Loan Charge in the media</h3>
+      <p>There has been plenty of press about the punitive 2019 Loan Charge and the disastrous effect it will have on contactors and their families. Here's a collection of useful links for some context.</p>
+        <ul>
+          <li><a href="https://www.hmrcloancharge.info" target="_blank">Loan Charge Action Group</a></li>
+          <li><a href="https://publications.parliament.uk/pa/ld201719/ldselect/ldeconaf/242/24207.htm#_idTextAnchor029" target="_blank">The House of Lords condemn the Loan Charge: Report</a></li>
+          <li><a href="https://edm.parliament.uk/early-day-motion/51710/the-2019-loan-charge" target="_blank">Early Day Motion: 104 UK MPs support making loan charge prospective (not retrospective)</a></li>
+          <li><a href="https://www.rossmartin.co.uk/sme-tax-news/3781-mps-and-lords-question-the-loan-charge" target="_blank">Ross Martin: MPs and Lords question the loan charge</a></li>
+          <li><a href="https://www.contractoruk.com/news/0013795judicial_review_2019_loan_charge_launched.html" target="_blank">Contractor UK: Judicial Review launched against the Loan Charge</a></li>
+          <li><a href="https://www.independent.co.uk/news/business/news/loan-charge-tax-bill-lcag-hmrc-legal-action-human-rights-a8559926.html" target="_blank">The Independent: Contractors facing huge tax bill launch legal action against HMRC alleging human rights breach</a></li>
+          <li><a href="https://www.step.org/news/contractors-fight-loan-charges-human-rights-grounds" target="_blank">STEP: Contractors fight loan charges on human rights grounds</a></li>
+          <li><a href="https://www.ft.com/content/93bae1b0-bbec-11e8-8dfd-2f1cbc7ee27c" target="_blank">Financial Times: HMRC tax crackdown victimises easy targets</a></li>
+          <li><a href="https://www.bbc.com/news/business-46431167" target="_blank">BBC: Taxpayers treated unfairly by HMRC, says House of Lords report</a></li>
+          <li><a href="https://www.parliament.uk/business/committees/committees-a-z/lords-select/economic-affairs-finance-bill-sub-committee/news-parliament-2017/powers-report/" target="_blank">Lords Select Committee: Taxpayers treated unfairly by HMRC, peers find</a></li>
+          <li><a href="https://www.independent.co.uk/news/business/comment/hmrc-aggressive-tax-avoidance-loan-charge-rules-house-of-lords-economic-affairs-committee-treasury-a8666321.html" target="_blank">The Independent: 'Unfair' taxman under fire over rules that may bankrupt a social worker, but MPs are at fault too</a></li>
+          <li><a href="https://www.accountingweb.co.uk/tax/hmrc-policy/lords-call-for-urgent-loan-charge-review" target="_blank">Accounting Web: Lords call for urgent loan charge review</a></li>
+          <li><a href="http://news.crystalumbrella.com/ipse-urges-chancellor-to-drop-retrospective-loan-charges/" target="_blank">IPSE urges chancellor to drop retrospective loan charges</a></li>
+          <li><a href="https://www.iaindale.com/articles/how-can-hmrc-defend-retrospective-taxation-going-back-20-years" target="_blank">Iain Dale: How Can HMRC Defend Retrospective Taxation Going Back 20 Years?</a></li>
+          <li><a href="https://www.iaindale.com/articles/loan-charge" target="_blank">Iain Dale: The Loan Charge Scandal: Why The Treasury Must Embark on a U-turn</a></li>
+          <li><a href="https://www.youtube.com/watch?v=F9KuO91qseg" target="_blank">Loan Charge Action Day (YouTube)</a></li>
+          <li><a href="https://www.youtube.com/watch?v=DN6v6vQcRqo" target="_blank">Loan Charge concerns by Peter Bone MP (YouTube)</a></li>
+          <li><a href="https://www.youtube.com/watch?v=JpYLWb1AtIw" target="_blank">Good Morning Britain: Tax avoidance (YouTube)</a></li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+

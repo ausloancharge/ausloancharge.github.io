@@ -11,4 +11,24 @@ We are a support network of Australians who have been contractors working in the
 
 Our aim is to come together to support each other and to strive for a fair outcome and aligning ourselves closely with the [Loan Charge Action Group](https://www.hmrcloancharge.info/).
 
-If you are affected, please [get in touch](contact-us).
+
+## Scheme promoters
+
+If you have ever engaged the services of these companies, you may be affected.
+  * White Collar Consulting
+  * Cascade / Penfolds / Hamilton / Grange
+  * Assignment Solutions
+  * Edge Consulting / Norla
+  * Talent Resource Management
+  * Cherrylon Marketing
+  * Trentburg Holdings / Raingold
+  * Tract Management
+  * Sanzar Partnership / Sanzar Solutions
+  * Castlemaine
+  * Actinium Management
+  * Aston Management
+  * Newquay Professional
+  * ASMG
+
+
+If you think you might be affected, please [get in touch](contact-us).
