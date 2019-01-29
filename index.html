@@ -11,58 +11,66 @@ order: 00
     <p><b>Foreign claims should only be raised for non contested tax charges - not tax in dispute (this includes APNs and the 2019 Loan charge)</b></p>
     <p>We are a support group for Australians who are now caught up in the UK 2019 Loan Charge, working very closely with the <a href="https://www.hmrcloancharge.info/">Loan Charge Action Group</a>.</p>
     <p>If you worked in the UK in the last 20 years as a contractor and have received a <i>brown</i> envelope from HMRC, or a notice from the ATO, you should get in touch with us.</p>
-    <p><a class="btn btn-primary btn-lg" href="about-us" role="button">Learn more &raquo;</a></p>
+    <p><a class="btn btn-primary btn-lg" href="loan-charge" role="button">Learn more &raquo;</a></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Latest News</h3>
+          {% for post in site.posts %}
+          <p>
+            <div class="row no-gutters">
+              {{ post.title }}
+              <span class="small">{{ post.description }}</span>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-auto mr-auto">
+                <span class="small text-muted">{{ post.date | date_to_long_string }}</span>
+              </div>
+              <div class="col-auto">
+                <span class="small"><a href="{{ post.url }}">Read More</a></span>
+              </div>
+            </div>
+          </p>
+          {% endfor %}
+        </div>
+        <hr />
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>What is the Loan Charge?</h3>
+          <p>It's a retrospective tax affecting thousands of contractors who worked in the UK since 1999.</p>
+          <p><a class="btn btn-secondary" href="loan-charge" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <hr />
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Get in touch!</h3>
+          <p>If you are affected by the 2019 Loan Charge, you should get in touch. By working together we can fight for a better outcome.</p>
+          <p><a class="btn btn-secondary" href="about-us" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+      <hr />
+
+    </div>
+
+    <div class="col-md-6">
+      <img src="{{ '/assets/images/facts.jpg' | relative_url }}">
+    </div>
   </div>
 </div>
 
 
 <div class="container">
-  <div class="row">
-    <div class="col-md-6">
-    <h3>Latest News</h3>
-  {% for post in site.posts %}
-  <p>
-    <div class="row no-gutters">
-      {{ post.title }}
-      <span class="small">{{ post.description }}</span>
-    </div>
-    <div class="row no-gutters">
-      <div class="col-auto mr-auto">
-        <span class="small text-muted">{{ post.date | date_to_long_string }}</span>
-      </div>
-      <div class="col-auto">
-        <span class="small"><a href="{{ post.url }}">Read More</a></span>
-      </div>
-    </div>
-  </p>
-  {% endfor %}
-
-    </div>
-
-    <div class="col-md-6">
-      <h3>ATO foreign claim?</h3>
-      <p>Some of those affected have begun to receive correspondence from the ATO for <abbr title="Accelerated Payment Notice">APN</abbr>s issued by HMRC, for example:</p>
-      <p class="text-muted">Enclosed is a notice pursuant to subsection 263-30(2) of Schedule 1 to the <i>Taxation Administration Act 1953</i> ("the Act"), notifying you of the particulars of a foreign revenue claim that has, pursuant to section 263-25 of Schedule 1 to the Act, been registered in the Foreign Revenue Claims Register.</p>
-      <p>If you have received anything from ATO like this, please <a href="contact-us">contact us!</a>
-    </div>
-  </div>
-  <hr />
-</div>
-
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h3>What is the Loan Charge?</h3>
-      <p>It's a retrospective tax affecting thousands of contractors who worked in the UK since 1999.</p>
-      <p><a class="btn btn-secondary" href="loan-charge" role="button">View details &raquo;</a></p>
-    </div>
-    <div class="col-md-6">
-      <h3>Get in touch!</h3>
-      <p>If you are affected by the 2019 Loan Charge, you should get in touch. By working together we can fight for a better outcome.</p>
-      <p><a class="btn btn-secondary" href="about-us" role="button">View details &raquo;</a></p>
-    </div>
-  </div>
   <hr />
 </div>
 
@@ -74,8 +82,10 @@ order: 00
         <ul>
           <li><a href="https://www.hmrcloancharge.info" target="_blank">Loan Charge Action Group</a></li>
           <li><a href="https://publications.parliament.uk/pa/ld201719/ldselect/ldeconaf/242/24207.htm#_idTextAnchor029" target="_blank">The House of Lords condemn the Loan Charge: Report</a></li>
-          <li><a href="https://edm.parliament.uk/early-day-motion/51710/the-2019-loan-charge" target="_blank">Early Day Motion: 109 (and counting!) UK MPs support making loan charge prospective (not retrospective)</a></li>
+          <li><a href="https://edm.parliament.uk/early-day-motion/51710/the-2019-loan-charge" target="_blank">Early Day Motion: 118 (and counting!) UK MPs support making loan charge prospective (not retrospective)</a></li>
           <li><a href="https://www.rossmartin.co.uk/sme-tax-news/3781-mps-and-lords-question-the-loan-charge" target="_blank">Ross Martin: MPs and Lords question the loan charge</a></li>
+          <li><a href="https://www.ft.com/content/c44d1baa-1dac-11e9-b126-46fc3ad87c65">Financial Times: Living in the shadow of a tax scandal</a>
+
           <li><a href="https://www.contractoruk.com/news/0013795judicial_review_2019_loan_charge_launched.html" target="_blank">Contractor UK: Judicial Review launched against the Loan Charge</a></li>
           <li><a href="https://www.independent.co.uk/news/business/news/loan-charge-tax-bill-lcag-hmrc-legal-action-human-rights-a8559926.html" target="_blank">The Independent: Contractors facing huge tax bill launch legal action against HMRC alleging human rights breach</a></li>
           <li><a href="https://www.step.org/news/contractors-fight-loan-charges-human-rights-grounds" target="_blank">STEP: Contractors fight loan charges on human rights grounds</a></li>
