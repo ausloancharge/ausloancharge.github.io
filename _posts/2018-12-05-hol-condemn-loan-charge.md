@@ -2,6 +2,7 @@
 layout: post
 title: House of Lords committee condemns retrospective Loan Charge.
 description: Damning report exposes HMRC's aggressive and unfair pursuit of those affected by the retrospective Loan Charge and their profound failure to target scheme providers.
+image: subcommittee
 ---
 
 The Loan Charge Action Group reports that:

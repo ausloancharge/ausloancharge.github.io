@@ -66,7 +66,7 @@ end # task :page
 
 desc "Launch preview environment"
 task :serve do
-  system "bundle exec jekyll serve -w"
+  system "bundle exec jekyll serve -w -H 0.0.0.0"
 end # task :preview
 
 

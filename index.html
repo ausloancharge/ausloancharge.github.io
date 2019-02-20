@@ -1,108 +1,120 @@
 ---
-layout: default
+layout: home
 title: Home
 order: 00
 ---
 
-<div class="jumbotron">
-  <div class="container">
-    <h1 class="display-4">Aussies against the Loan Charge</h1>
-    <p><b>Retrospective law is evil &mdash; all Australians deserve certainty in their affairs.</b></p>
-    <p><b>Foreign claims should only be raised for non contested tax charges - not tax in dispute (this includes APNs and the 2019 Loan charge)</b></p>
-    <p>We are a support group for Australians who are now caught up in the UK 2019 Loan Charge, working very closely with the <a href="https://www.hmrcloancharge.info/">Loan Charge Action Group</a>.</p>
-    <p>If you worked in the UK in the last 20 years as a contractor and have received a <i>brown</i> envelope from HMRC, or a notice from the ATO, you should get in touch with us.</p>
-    <p><a class="btn btn-primary btn-lg" href="loan-charge" role="button">Learn more &raquo;</a></p>
+<div class="full">
+  <div class="container-fluid">
+    <div class="row bottomrow">
+      <div class="col stop">
+        <h1>Retrospective tax is unfair and will destroy lives.</h1>
+      </div>
+      <div class="col stop">
+        <h2>Help us to <span class="text-danger">fight</span> the Loan Charge.</h2>
+      <p><a class="btn btn-danger btn-lg" href="loan-charge" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+    <br />
+    <br />
   </div>
 </div>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
+<div class="frontblock">
+  <div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+      <h1>Aussies against the Loan Charge</h1>
+      <p><b>Retrospective tax is unfair &mdash; all Australians deserve certainty in their affairs.</b></p>
+      <p><b>Foreign claims should only be raised for non contested tax charges - not tax in dispute (this includes APNs and the 2019 Loan Charge)</b></p>
+      <p>We are a support group for Australians who are now caught up in the UK 2019 Loan Charge, working very closely with the <a href="https://www.hmrcloancharge.info/">Loan Charge Action Group</a>.</p>
+      <p>If you worked as a contractor or freelancer in the UK and were paid using a loan arrangement, you will be affected by the 2019 Loan Charge and you should get in touch with us.</p>
+      <p><a class="btn btn-primary" href="loan-charge" role="button">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-sm-6">
+        <img src="{{ '/assets/images/anxiety.jpg' | relative_url }}" class="img-fluid">
+    </div>
+  </div>
+  </div>
+</div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Latest News</h3>
-          {% for post in site.posts %}
-          <p>
-            <div class="row no-gutters">
-              {{ post.title }}
-              <span class="small">{{ post.description }}</span>
-            </div>
+
+<div class="frontblock text-white bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Contact Us</h1>
+        <p>If you would like to join us, or have any questions, please provide your details in the form below.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <form action="https://6k1p5kt1f5.execute-api.us-west-2.amazonaws.com/Prod/" method="POST" id="contact-us-form">
+          <div class="form-group">
+            <label for="nameInputEmail1">Name</label>
+            <input type="text" class="form-control" id="nameInputEmail1" name="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phoneInputEmail1">Phone number</label>
+            <input type="text" class="form-control" id="phoneInputEmail1" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="messageInputEmail1">Message</label>
+            <textarea type="textarea" rows="6" class="form-control" id="messageInputEmail1" name="message"></textarea>
+          </div>
+          <div class="thanks alert alert-success" role="alert">
+            Thanks! We'll contact you soon.
+          </div>
+          <div class="errors alert alert-danger" role="alert">
+            There was an error submitting the form.
+          </div>
+          <div class="loader"></div>
+          <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LeXi3IUAAAAAA4hilHg_PTgAEzRBQvuVFvz_Zc9" data-callback="onContactUsSubmit" data-badge="inline">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="frontblock" style="background-color: #e8eaed;">
+  <div class="container">
+    <div class="example">
+      <h2>Latest News</h2>
+
+      <div class="card-deck">
+        {% for post in site.posts %}
+        <div class="card">
+          <img class="card-img-top" src="{{ '/assets/images/' | append: post.image | append: '.jpg' | relative_url }}">
+          <div class="card-body">
+            <h6 class="card-title">{{ post.title }}</h6>
+            <p class="card-text small">{{ post.description }}</p>
+          </div>
+          <div class="card-footer">
             <div class="row no-gutters">
               <div class="col-auto mr-auto">
-                <span class="small text-muted">{{ post.date | date_to_long_string }}</span>
+                <span class="small text-muted">Posted {{ post.date | date_to_long_string }}</span>
               </div>
               <div class="col-auto">
                 <span class="small"><a href="{{ post.url }}">Read More</a></span>
               </div>
             </div>
-          </p>
-          {% endfor %}
+          </div>
         </div>
-        <hr />
+        {% endfor %}
       </div>
-      <hr />
-
-      <div class="row">
-        <div class="col-md-12">
-          <h3>What is the Loan Charge?</h3>
-          <p>It's a retrospective tax affecting thousands of contractors who worked in the UK since 1999.</p>
-          <p><a class="btn btn-secondary" href="loan-charge" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-      <hr />
-
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Get in touch!</h3>
-          <p>If you are affected by the 2019 Loan Charge, you should get in touch. By working together we can fight for a better outcome.</p>
-          <p><a class="btn btn-secondary" href="about-us" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
-      <hr />
-
-    </div>
-
-    <div class="col-md-6">
-      <img src="{{ '/assets/images/facts.jpg' | relative_url }}">
     </div>
   </div>
 </div>
 
 
-<div class="container">
-  <hr />
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h3>Loan Charge in the media</h3>
-      <p>There has been plenty of press about the punitive 2019 Loan Charge and the disastrous effect it will have on contactors and their families. Here's a collection of useful links for some context.</p>
-        <ul>
-          <li><a href="https://www.hmrcloancharge.info" target="_blank">Loan Charge Action Group</a></li>
-          <li><a href="https://publications.parliament.uk/pa/ld201719/ldselect/ldeconaf/242/24207.htm#_idTextAnchor029" target="_blank">The House of Lords condemn the Loan Charge: Report</a></li>
-          <li><a href="https://edm.parliament.uk/early-day-motion/51710/the-2019-loan-charge" target="_blank">Early Day Motion: 118 (and counting!) UK MPs support making loan charge prospective (not retrospective)</a></li>
-          <li><a href="https://www.rossmartin.co.uk/sme-tax-news/3781-mps-and-lords-question-the-loan-charge" target="_blank">Ross Martin: MPs and Lords question the loan charge</a></li>
-          <li><a href="https://www.ft.com/content/c44d1baa-1dac-11e9-b126-46fc3ad87c65">Financial Times: Living in the shadow of a tax scandal</a>
-
-          <li><a href="https://www.contractoruk.com/news/0013795judicial_review_2019_loan_charge_launched.html" target="_blank">Contractor UK: Judicial Review launched against the Loan Charge</a></li>
-          <li><a href="https://www.independent.co.uk/news/business/news/loan-charge-tax-bill-lcag-hmrc-legal-action-human-rights-a8559926.html" target="_blank">The Independent: Contractors facing huge tax bill launch legal action against HMRC alleging human rights breach</a></li>
-          <li><a href="https://www.step.org/news/contractors-fight-loan-charges-human-rights-grounds" target="_blank">STEP: Contractors fight loan charges on human rights grounds</a></li>
-          <li><a href="https://www.ft.com/content/93bae1b0-bbec-11e8-8dfd-2f1cbc7ee27c" target="_blank">Financial Times: HMRC tax crackdown victimises easy targets</a></li>
-          <li><a href="https://www.bbc.com/news/business-46431167" target="_blank">BBC: Taxpayers treated unfairly by HMRC, says House of Lords report</a></li>
-          <li><a href="https://www.parliament.uk/business/committees/committees-a-z/lords-select/economic-affairs-finance-bill-sub-committee/news-parliament-2017/powers-report/" target="_blank">Lords Select Committee: Taxpayers treated unfairly by HMRC, peers find</a></li>
-          <li><a href="https://www.independent.co.uk/news/business/comment/hmrc-aggressive-tax-avoidance-loan-charge-rules-house-of-lords-economic-affairs-committee-treasury-a8666321.html" target="_blank">The Independent: 'Unfair' taxman under fire over rules that may bankrupt a social worker, but MPs are at fault too</a></li>
-          <li><a href="https://www.accountingweb.co.uk/tax/hmrc-policy/lords-call-for-urgent-loan-charge-review" target="_blank">Accounting Web: Lords call for urgent loan charge review</a></li>
-          <li><a href="http://news.crystalumbrella.com/ipse-urges-chancellor-to-drop-retrospective-loan-charges/" target="_blank">IPSE urges chancellor to drop retrospective loan charges</a></li>
-          <li><a href="https://www.iaindale.com/articles/how-can-hmrc-defend-retrospective-taxation-going-back-20-years" target="_blank">Iain Dale: How Can HMRC Defend Retrospective Taxation Going Back 20 Years?</a></li>
-          <li><a href="https://www.iaindale.com/articles/loan-charge" target="_blank">Iain Dale: The Loan Charge Scandal: Why The Treasury Must Embark on a U-turn</a></li>
-          <li><a href="https://www.youtube.com/watch?v=F9KuO91qseg" target="_blank">Loan Charge Action Day (YouTube)</a></li>
-          <li><a href="https://www.youtube.com/watch?v=DN6v6vQcRqo" target="_blank">Loan Charge concerns by Peter Bone MP (YouTube)</a></li>
-          <li><a href="https://www.youtube.com/watch?v=JpYLWb1AtIw" target="_blank">Good Morning Britain: Tax avoidance (YouTube)</a></li>
-        </ul>
+<div class="frontblock text-white" style="background-color: black;">
+  <div class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hRXTTE-0VTA?rel=0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
-
-

@@ -2,6 +2,7 @@
 layout: post
 title: MPs force a review into the Loan Charge.
 description: Supportive MPs force Government to concede review on Loan Charge!
+image: members
 ---
 
 The Loan Charge Action Group reports that:
