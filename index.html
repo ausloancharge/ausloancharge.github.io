@@ -39,42 +39,22 @@ order: 00
 </div>
 
 
-<div class="frontblock text-white bg-dark">
+<div class="frontblock" style="background-color: #e8eaed;">
   <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <h1>Contact Us</h1>
-        <p>If you would like to join us, or have any questions, please provide your details in the form below.</p>
+        <h2>Facts</h2>
+        {% for i in (1..4) %}
+        <img src="{{ '/assets/images/facts' | append: i | append: '.png' | relative_url }}" style="padding: 0.5em;">
+        {% endfor %}
       </div>
 
-      <div class="col-sm-6">
-        <form action="https://6k1p5kt1f5.execute-api.us-west-2.amazonaws.com/Prod/" method="POST" id="contact-us-form">
-          <div class="form-group">
-            <label for="nameInputEmail1">Name</label>
-            <input type="text" class="form-control" id="nameInputEmail1" name="name">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" name="email">
-          </div>
-          <div class="form-group">
-            <label for="phoneInputEmail1">Phone number</label>
-            <input type="text" class="form-control" id="phoneInputEmail1" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="messageInputEmail1">Message</label>
-            <textarea type="textarea" rows="6" class="form-control" id="messageInputEmail1" name="message"></textarea>
-          </div>
-          <div class="thanks alert alert-success" role="alert">
-            Thanks! We'll contact you soon.
-          </div>
-          <div class="errors alert alert-danger" role="alert">
-            There was an error submitting the form.
-          </div>
-          <div class="loader"></div>
-          <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LeXi3IUAAAAAA4hilHg_PTgAEzRBQvuVFvz_Zc9" data-callback="onContactUsSubmit" data-badge="inline">Submit</button>
-        </form>
-      </div>
+  </div>
+</div>
+
+
+<div class="frontblock text-white" style="background-color: black;">
+  <div class="container">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hRXTTE-0VTA?rel=0" allowfullscreen></iframe>
     </div>
   </div>
 </div>
@@ -111,10 +91,42 @@ order: 00
 </div>
 
 
-<div class="frontblock text-white" style="background-color: black;">
+<div class="frontblock text-white bg-dark">
   <div class="container">
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hRXTTE-0VTA?rel=0" allowfullscreen></iframe>
+    <div class="row">
+      <div class="col-sm-6">
+        <h1>Contact Us</h1>
+        <p>If you would like to join us, or have any questions, please provide your details in the form below.</p>
+      </div>
+
+      <div class="col-sm-6">
+        <form action="https://6k1p5kt1f5.execute-api.us-west-2.amazonaws.com/Prod/" method="POST" id="contact-us-form">
+          <div class="form-group">
+            <label for="nameInputEmail1">Name</label>
+            <input type="text" class="form-control" id="nameInputEmail1" name="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phoneInputEmail1">Phone number</label>
+            <input type="text" class="form-control" id="phoneInputEmail1" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="messageInputEmail1">Message</label>
+            <textarea type="textarea" rows="6" class="form-control" id="messageInputEmail1" name="message"></textarea>
+          </div>
+          <div class="thanks alert alert-success" role="alert">
+            Thanks! We'll contact you soon.
+          </div>
+          <div class="errors alert alert-danger" role="alert">
+            There was an error submitting the form.
+          </div>
+          <div class="loader"></div>
+          <button type="submit" class="btn btn-primary g-recaptcha" data-sitekey="6LeXi3IUAAAAAA4hilHg_PTgAEzRBQvuVFvz_Zc9" data-callback="onContactUsSubmit" data-badge="inline">Submit</button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
