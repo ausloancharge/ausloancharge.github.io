@@ -19,4 +19,4 @@ Most shockingly, the Inquiry exposes the devasting consequences the Loan Charge 
 
 The Inquiry also reveals a cynical campaign of misinformation waged by both HMRC and the Treasury, to try to justify their policy and a cover-up of HMRC’s past failings and current conduct. The Inquiry concludes there has been deliberate misinformation and misrepresentation by both HMRC and the Treasury, in breach of both the Civil Service Code and the Ministerial Code.
 
-You can find the inqury report [here](http://www.loanchargeappg.co.uk/wp-content/uploads/2019/04/Loan-Charge-Inquiry-Report-April-2019-FINAL.pdf).
+You can find the inqury report [here](http://www.loanchargeappg.co.uk/wp-content/uploads/2019/04/Loan-Charge-Inquiry-Report-April-2019-FINAL-1.pdf).
