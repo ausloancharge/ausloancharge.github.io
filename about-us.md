@@ -7,14 +7,18 @@ order: 70
 
 # About Us
 
-We are a support network of Australians who have been contractors working in the United Kingdom and are now caught up in the 2019 Loan Charge.
+We believe the Australian Tax Office (ATO) is accepting foreign tax claims onto the Australian foreign tax register that are unlawful.
+
+We are a support network of Australians who find themselves in this situation, most commonly contractors who worked in the United Kingdom now subject to the Loan Charge.
 
 Our aim is to come together to support each other and to strive for a fair outcome and aligning ourselves closely with the [Loan Charge Action Group](https://www.hmrcloancharge.info/).
 
 
-## Scheme promoters
+## UK Loan Charge
 
-If you have ever engaged the services of these companies, you may be affected.
+You may or may not have received correspondence from HMRC regarding the UK Loan Charge if you are affected,
+but generally, if you have ever engaged the services of these companies, the Loan Charge may apply to you.
+
   * White Collar Consulting
   * Cascade / Penfolds / Hamilton / Grange
   * Assignment Solutions
@@ -30,5 +34,8 @@ If you have ever engaged the services of these companies, you may be affected.
   * Newquay Professional
   * ASMG
 
+## Other tax claims
+
+Not only are Australians affected by unlawful foreign tax claims.
 
 If you think you might be affected, please [get in touch](contact-us).

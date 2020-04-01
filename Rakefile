@@ -10,6 +10,25 @@ CONFIG = {
   'post_ext' => "md",
 }
 
+task :setup do
+  system "bundle install --path vendor/bundle"
+end # task :setup
+
+desc "Build site"
+task :build do
+  system "bundle exec jekyll build"
+end # task :serve
+
+desc "Launch preview environment"
+task :serve do
+  system "bundle exec jekyll serve -H 0.0.0.0"
+end # task :serve
+
+desc "Launch preview environment"
+task :preview do
+  system "bundle exec jekyll serve"
+end # task :preview
+
 # Usage: rake post title="A Title" [date="2012-02-09"]
 desc "Begin a new post in #{CONFIG['posts']}"
 task :post do
@@ -63,12 +82,6 @@ task :page do
   end
 	exec("#{ENV['EDITOR']} #{filename}")
 end # task :page
-
-desc "Launch preview environment"
-task :serve do
-  system "bundle exec jekyll serve -w -H 0.0.0.0"
-end # task :preview
-
 
 def ask(message, valid_options)
   if valid_options

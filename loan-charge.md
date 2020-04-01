@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Loan Charge
+title: UK Loan Charge
 permalink: /loan-charge
 order: 70
 ---

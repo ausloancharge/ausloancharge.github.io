@@ -1,7 +1,7 @@
 title: Aussies against the Loan Charge
 email: "AussiesResistingHMRC@gmail.com"
 description: >-
-  A support network for Australian affected by the UK 2019 HMRC Loan Charge
+  A support network for Australian affected by unlawful foreign claims
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -25,3 +25,6 @@ exclude:
   - Gemfile.lock
   - node_modules
   - update_boostrap.sh
+  - vendor
+
+
